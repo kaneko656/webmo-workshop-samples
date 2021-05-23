@@ -1,9 +1,11 @@
-// mDNS名もしくはIPアドレスを入れます
-// Webmo本体のディスプレイで確認できます（Information -> Network）
+// Webmoの設定を特にいじっていない場合はこれだけで接続できます
+Webmo.init()
 
+// mDNS名もしくはIPアドレスを指定することで特定のWebmoに接続できます
+//   Webmo本体のディスプレイで確認できます（Information -> Network）
 // 例
-// Webmo.init({ host: 'webmo.local' })
-// Webmo.init({ host: '192.168.11.40' })
+//   Webmo.init({ host: 'my-webmo.local' })
+//   Webmo.init({ host: '192.168.11.40' })
 
 // 回転する
 Webmo.motor.rotate({ speed: 40 })
