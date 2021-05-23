@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=0" />
+    <title>Webmo Sample Extra1</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="js/lib/webmo.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="section">
+        <div class="title">Extra 1</div>
+        <p>ZIG Simulatorから値を受け取ります</p>
+        <p>ZIG Simulatorの設定</p>
+        <ol>
+          <li>
+            IP ADDRESS: WebmoのIPアドレスを入力
+          </li>
+          <li>
+            PORT NUNBER: 5555を入力
+          </li>
+          <li>
+            MESSAGE RATE: 最初は1にしておく（重いデータでなければ10にしても大丈夫）
+          </li>
+        </ol>
+      </div>
+      <div class="section">
+        <div class="title">受け取ったデータ</div>
+        <p id="data">&nbsp;</p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -7,7 +7,8 @@
     "start": "serve ./public",
     "step1": "serve ./step1",
     "step2": "serve ./step2",
-    "step3": "serve ./step3"
+    "step3": "serve ./step3",
+    "extra1": "serve ./extra1"
   },
   "repository": {
     "type": "git",
