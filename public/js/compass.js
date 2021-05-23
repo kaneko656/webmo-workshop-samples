@@ -1,4 +1,4 @@
-import { Button } from './component/index.js'
+import { Button } from './components/index.js'
 let isAutoCalibration = false
 
 const init = () => {

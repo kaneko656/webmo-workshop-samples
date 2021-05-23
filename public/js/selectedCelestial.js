@@ -1,4 +1,4 @@
-import { Tile } from './component/index.js'
+import { Tile } from './components/index.js'
 
 let selectedCelestial = 'sun'
 let selectedCallback = () => {}

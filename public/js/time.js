@@ -1,4 +1,4 @@
-import { Slider, Text, Button } from './component/index.js'
+import { Slider, Text, Button } from './components/index.js'
 
 export const timeInterval = 0.1 // 単位: 秒
 export const callbackInterval = 3 // 単位: 秒

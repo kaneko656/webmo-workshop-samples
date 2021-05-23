@@ -1,4 +1,4 @@
-import { Text, Button } from './component/index.js'
+import { Text, Button } from './components/index.js'
 
 const myLocation = {
   latitude: 35.68944,
