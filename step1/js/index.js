@@ -7,6 +7,10 @@ Webmo.init()
 //   Webmo.init({ host: 'my-webmo.local' })
 //   Webmo.init({ host: '192.168.11.40' })
 
+/**
+ *  Step1. Webmoをとりあえず動かしてみる
+ **/
+
 // 回転する
 Webmo.motor.rotate({ speed: 40 })
 
