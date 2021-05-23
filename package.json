@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "serve ./public",
-    "step1": "serve ./step1"
+    "step1": "serve ./step1",
+    "step2": "serve ./step2"
   },
   "repository": {
     "type": "git",
