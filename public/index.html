@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=0" />
+    <title>Webmo Celestial Sample</title>
+    <script src="js/lib/webmo.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <script type="module" src="js/index.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="section">
+        <div class="title">天体を探す</div>
+        <p>探したい天体の位置をWebmoが指し示す</p>
+      </div>
+      <div class="section">
+        <div class="section-title">現在地設定</div>
+        <div class="flex">
+          <button id="get-location" class="button">現在地を取得</button>
+          <div id="my-location-status" class="alert-content"></div>
+        </div>
+        <p id="my-location-detail">&nbsp;</p>
+        <a id="my-location-googlemap" target="_blank" rel="noopener">
+          Google Mapを開く
+        </a>
+      </div>
+
+      <div class="section">
+        <div class="title">手動でWebmoの方向を調整する</div>
+        <p>ポインタを水平・北向きに設置します。</p>
+        <p>北向きに自動で合わせる方法は次の通りです。</p>
+        <ol>
+          <li>
+            ポインタを水平・北向きに設置します。
+          </li>
+          <li>
+            調整ボタンを押します。
+          </li>
+        </ol>
+        <button id="manual-calibration" class="button">調整</button>
+      </div>
+
+      <div class="section">
+        <div class="title">自動でWebmoの方向を調整する</div>
+        <ol>
+          <li>
+            ポインターを水平にします。
+          </li>
+          <li>
+            <a target="_blank" rel="noopener" href="https://zig-project.com/">
+              ZIG simulator </a
+            >アプリを起動し、Settingsを開きます。
+          </li>
+          <li>
+            IP ADDRESS: 「WebmoのIP（Webmoのディスプレイで確認できます）」を入力<br />PORT NUMBER: 「5555」を入力<br />MESSAGE RATE: 「1」にする
+          </li>
+          <li>
+            Sonsorを開き、「COMPASS」にチェックを入れ、Startを開きます。
+          </li>
+          <li>
+            ポインターとスマホの方向を合わせます。スマホの置き場所はどこでも大丈夫です。
+          </li>
+          <li>
+            自動調整ボタンを押すと、自動で北向きに回転します。
+          </li>
+        </ol>
+        <button id="auto-calibration" class="button">自動調整</button>
+      </div>
+
+      <div class="section">
+        <div class="section-title">探したい天体</div>
+        <div class="tile">
+          <div class="tile-image">
+            <img
+              class="celestial-image checked-image"
+              data-id="sun"
+              src="images/sun.jpg"
+            />
+            <div class="image-label">太陽</div>
+          </div>
+          <div class="tile-image">
+            <img
+              class="celestial-image"
+              data-id="moon"
+              src="images/moon.jpg"
+            />
+            <div class="image-label">月</div>
+          </div>
+          <div class="tile-image">
+            <img
+              class="celestial-image"
+              data-id="mercury"
+              src="images/mercury.jpg"
+            />
+            <div class="image-label">水星</div>
+          </div>
+          <div class="tile-image">
+            <img
+              class="celestial-image"
+              data-id="venus"
+              src="images/venus.jpg"
+            />
+            <div class="image-label">金星</div>
+          </div>
+          <div class="tile-image">
+            <img class="celestial-image" data-id="mars" src="images/mars.jpg" />
+            <div class="image-label">火星</div>
+          </div>
+          <div class="tile-image">
+            <img
+              class="celestial-image"
+              data-id="jupiter"
+              src="images/jupiter.jpg"
+            />
+            <div class="image-label">木星</div>
+          </div>
+          <div class="tile-image">
+            <img
+              class="celestial-image"
+              data-id="saturn"
+              src="images/saturn.jpg"
+            />
+            <div class="image-label">土星</div>
+          </div>
+          <div class="tile-image">
+            <img
+              class="celestial-image"
+              data-id="uranus"
+              src="images/uranus.jpg"
+            />
+            <div class="image-label">天王星</div>
+          </div>
+          <div class="tile-image">
+            <img
+              class="celestial-image"
+              data-id="neptune"
+              src="images/neptune.jpg"
+            />
+            <div class="image-label">海王星</div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">シミュレーション再生</div>
+        <button id="start" class="button button-green">スタート</button>
+        <button id="stop" class="button button-red">ストップ</button>
+        <p>時間: <span id="time-label">&nbsp;</span></p>
+        <p>速度: <span id="speed-label">&nbsp;</span></p>
+        <input
+          class="slider"
+          id="speed-slider"
+          type="range"
+          value="0"
+          min="1"
+          max="3600"
+          step="1"
+        />
+        <div>
+          <button id="to-current-time" class="button">現在時刻に戻す</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
