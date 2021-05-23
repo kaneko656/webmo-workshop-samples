@@ -1,4 +1,4 @@
-# webmo-celestial-sample
+# webmo-workshop-samples
 
 使い方（初回）
 `npm install` or `yarn install`
