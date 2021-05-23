@@ -17,9 +17,6 @@
     "url": "https://github.com/kaneko656/webmo-celestial-sample/issues"
   },
   "homepage": "https://github.com/kaneko656/webmo-celestial-sample#readme",
-  "dependencies": {
-    "webmo2-library-javascript": "https://github.com/cidreixd/webmo2-library-javascript.git"
-  },
   "devDependencies": {
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
