@@ -1,5 +1,5 @@
 {
-  "name": "webmo-celestial-sample",
+  "name": "webmo-workshop-sample",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kaneko656/webmo-celestial-sample.git"
+    "url": "git+https://github.com/kaneko656/webmo-workshop-sample.git"
   },
-  "author": "kaneko656 <nakano656sho@gmail.com>",
+  "author": "kaneko656",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kaneko656/webmo-celestial-sample/issues"
+    "url": "https://github.com/kaneko656/webmo-workshop-sample/issues"
   },
-  "homepage": "https://github.com/kaneko656/webmo-celestial-sample#readme",
+  "homepage": "https://github.com/kaneko656/webmo-workshop-sample#readme",
   "devDependencies": {
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
