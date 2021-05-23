@@ -19,20 +19,25 @@ setTimeout(() => {
 // そのほかのWebmo関数で遊んでみましょう
 
 // 一定速度で回転する（マイナスの値で逆回転）
-// Webmo.motor.rotate({ speed: -90 })
+//   Webmo.motor.rotate({ speed: -90 })
 
 // 停止する
-// Webmo.motor.stop()
+//   Webmo.motor.stop()
 
 // 180度回転する
-// Webmo.motor.rotateBy({ degree: 180, speed: 90 })
+//   Webmo.motor.rotateBy({ degree: 180, speed: 90 })
 
 // モータ1だけ動かす（Webmo.motor1）
-// Webmo.motor1.rotate({ speed: 40 })
-// Webmo.motor1.rotateBy({ degree: 180, speed: 90 })
-// Webmo.motor1.stop()
+//   Webmo.motor1.rotate({ speed: 40 })
+//   Webmo.motor1.rotateBy({ degree: 180, speed: 90 })
+//   Webmo.motor1.stop()
 
 // モータ2だけ動かす（Webmo.motor2）
-// Webmo.motor2.rotate({ speed: 40 })
-// Webmo.motor2.rotateBy({ degree: 180, speed: 90 })
-// Webmo.motor2.stop()
+//   Webmo.motor2.rotate({ speed: 40 })
+//   Webmo.motor2.rotateBy({ degree: 180, speed: 90 })
+//   Webmo.motor2.stop()
+
+// 同時に別々の動きをさせたい（Webmo.motor）
+// 第一引数がモータ1, 第二引数がモータ2になります
+//   Webmo.motor.rotate({ speed: 40 }, { speed: 90 })
+//   Webmo.motor.rotateBy({ degree: 180, speed: 90 }, { degree: -90, speed: 90 })
