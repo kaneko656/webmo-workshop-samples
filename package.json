@@ -6,7 +6,8 @@
   "scripts": {
     "start": "serve ./public",
     "step1": "serve ./step1",
-    "step2": "serve ./step2"
+    "step2": "serve ./step2",
+    "step3": "serve ./step3"
   },
   "repository": {
     "type": "git",

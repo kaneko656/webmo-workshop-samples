@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=0" />
+    <title>Webmo Celestial Sample</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <script src="js/lib/webmo.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="section">
+        <div class="title">天体を探す</div>
+        <p>探したい天体の位置をWebmoが指し示す</p>
+      </div>
+
+      <div class="section">
+        <div class="title">手動でWebmoの方向を調整する</div>
+        <ol>
+          <li>
+            ポインタを水平・北向きに合わせます。
+          </li>
+          <li>
+            調整ボタンを押します。
+          </li>
+        </ol>
+        <button id="manual-calibration" class="button">調整</button>
+      </div>
+
+      <div class="section">
+        <button id="pointer-button" class="button button-green">天体を指し示す</button>
+      </div>
+    </main>
+  </body>
+</html>
